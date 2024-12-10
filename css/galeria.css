@@ -1,0 +1,91 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid black;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    height: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Espaciado para el contenido */
+.flex-container {
+    margin-top: 80px; /* Espacio debajo de la navbar */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Imágenes desordenadas */
+.image {
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s, top 0.3s, left 0.3s;
+    position: relative;
+}
+
+/* Posiciones desordenadas */
+.img1 {
+    top: -20px;
+    left: 10px;
+    transform: rotate(-5deg);
+}
+
+.img2 {
+    top: 30px;
+    left: -15px;
+    transform: rotate(3deg);
+}
+
+.img3 {
+    top: -15px;
+    left: 25px;
+    transform: rotate(-7deg);
+}
+
+.img4 {
+    top: 40px;
+    left: -30px;
+    transform: rotate(4deg);
+}
+
+.img5 {
+    top: -10px;
+    left: 20px;
+    transform: rotate(-4deg);
+}
+
+.img6 {
+    top: 35px;
+    left: -25px;
+    transform: rotate(2deg);
+}
+
+.img7 {
+    top: 50px;
+    left: 0;
+    transform: rotate(-6deg);
+}
+
+/* Hover para destacar */
+.image:hover {
+    transform: scale(1.1) rotate(0deg); /* Vuelve al estado normal y aplica un zoom */
+    z-index: 10;
+}

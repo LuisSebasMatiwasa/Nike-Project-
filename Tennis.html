@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Model with A-Frame</title>
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <style>
+    body { margin: 0; }
+    a-scene { height: 100vh; }
+  </style>
+</head>
+      <!-- Enlaces de navegación -->
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Productos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="Tennis.html">PROXIMO MODELO</a>
+        <a href="vintage.html">Contactos</a>
+    </div>
+<body>
+
+  <a-scene>
+    <!-- Añade un fondo de cielo -->
+    <a-sky color="#f0f0f0"></a-sky>
+
+    <!-- Añade iluminación -->
+    <a-light type="ambient" color="#ffffff" intensity="0.1"></a-light>
+    <a-light type="directional" color="#ffffff" position="1 1 0.8"></a-light>
+
+    <!-- Carga el modelo 3D -->
+    <a-entity 
+      gltf-model="models/zapas2.glb" 
+      position="0 0 -5" 
+      rotation="0 45 0" 
+      scale="0.5 0.5 0.5">
+    </a-entity>
+
+    <!-- Controles de cámara -->
+    <a-camera position="0 1.6 0">
+      <a-entity cursor="fuse: true; fuseTimeout: 500" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: black; shader: flat"></a-entity>
+    </a-camera>
+  </a-scene>
+</body>
+</html>

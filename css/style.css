@@ -1,0 +1,221 @@
+
+.navbar {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+}
+.navbar img {
+  height: 50px;
+}
+.navbar .nav-links {
+  display: flex;
+  gap: 15px;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navbar .nav-links a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+  /* Animaciones */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .w3-btn:hover {
+    animation: bounce 0.5s;
+  }
+  
+/* Establecer el fondo fijo en cada sección parallax */
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Altura completa de la ventana */
+  background-size: cover; /* Cubrir toda la pantalla */
+  background-position: center center;
+  background-attachment: fixed; /* Efecto Parallax */
+}
+
+/* Fondo para la primera sección */
+#parallax1 {
+  background-image: url('https://media.revistagq.com/photos/62a314456ff5edd049b21f6f/16:9/w_2560%2Cc_limit/chris-henry-tV8yaU09t7w-unsplash.jpg');
+}
+
+/* Fondo para la segunda sección */
+#parallax2 {
+  background-image: url('https://s2.ppllstatics.com/ideal/www/multimedia/2024/02/14/zapatillas-nike-k0qC-U2101527257402SUH-1200x840@Ideal.jpg');
+}
+
+/* Fondo para la tercera sección */
+#parallax3 {
+  background-image: url('https://www.intersport.es/img/cms/Marcas/Nike/inf-cat.png');
+}
+
+
+  .capa{
+    max-height: 100vh;
+    border: 1px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+
+}
+.capa::-webkit-scrollbar{
+    width: 0;
+}
+.capa .item{
+    min-width: 100vh;
+    height: 100vh;
+    line-height: 100vh;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 2px;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+header {
+    background: url('nike-header.jpg') no-repeat center center/cover;
+    height: 40vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.panel {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    background: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+.panel button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: #555;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.panel button:hover {
+    background: #777;
+}
+
+
+.daltonico {
+    filter: contrast(1.2) saturate(1.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Barra de Navegación */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img {
+    height: 50px; 
+}
+
+  
+  /* Contenedor Principal */
+  .main-content {
+    padding: 20px;
+  }
+  
+/* Grid para las imágenes */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .grid-item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.navbar img {
+    width: 40px; /* Ajusta el tamaño de la imagen */
+    margin-right: 20px;
+}
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+    display: block;
+}
+.navbar a:hover {
+    background-color: #575757;
+}
+/* Estilos de las secciones */
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header {
+    background: url('nike-4-logo-png-transparent.png') no-repeat center center/cover;
+    height: 40vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

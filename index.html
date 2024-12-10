@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Inclusión y Estilo</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    .panel {
+        position: fixed;
+        top: 80px; /* Ajusta este valor según el espacio necesario */
+        right: 20px;
+        background-color: white;
+        border: 2px solid black;
+        padding: 10px;
+        z-index: 1000; /* Asegura que quede encima del contenido */
+        border-radius: 5px;
+    }
+</style>
+
+<div class="navbar">
+    <!-- Logo de Nike -->
+    
+<a href="glamour.html"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo"></a>
+
+    <!-- Enlaces de navegación -->
+    <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Productos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="Tennis.html">PROXIMO MODELO</a>
+        <a href="vintage.html">Contactos</a>
+    </div>
+</div>
+
+
+<section class="content w3-center w3-padding-64">
+
+    <h2>Bienvenido a</h2>
+    <h1>NIKE</h1>
+    <img src="img/nike-4-logo-png-transparent.png" alt="" width="200px" height="auto">
+    <p>Zapatillas y Tenis para cualquier ocasión.</p>
+  </section>
+  <div class="parallax" id="parallax1"></div>
+  <!-- Sección 2: Parallax con otro fondo fijo -->
+  <!-- Sección de contenido -->
+  <section class="content w3-center w3-padding-64">
+    <h2>Encuentra tu mejor precio</h2>
+    <p>En Nike tenemos diferentes descuentos que se ajustan facilmente a tu bolsillo</p>
+  </section>
+  <div class="parallax" id="parallax2"></div>
+  <!-- Sección 3: Otro Parallax con fondo diferente -->
+
+  <!-- Sección de contenido -->
+  <section class="content w3-center w3-padding-64">
+    <h2>Colecciones Especiales</h2>
+    <p>Encuentra nuestra colecciones, son por tiempo limitado, ¡No te las pierdas!</p>
+  </section>
+  <div class="parallax" id="parallax3"></div>
+
+
+
+<!-- Contenido principal -->
+<a name="seccion3">
+<section>
+    <main class="content">
+    <h2>Nuestra Misión</h2>
+    <p>
+        En Nike, creemos en el poder del deporte para transformar vidas. Nuestros productos están diseñados con
+        tecnología de punta para brindar comodidad, estilo y rendimiento.
+    </p>
+    </main>
+</section>
+</a> 
+</a>
+
+
+
+
+<!-- Panel de Configuraciones Inclusivas -->
+<div class="panel">
+    <button onclick="changeFontSize(1)">Aumentar Texto</button>
+    <button onclick="changeFontSize(-1)">Reducir Texto</button>
+    <button onclick="readText()">Leer Texto</button>
+    <button onclick="toggleDaltonico()">Modo Daltónico</button>
+</div>
+
+<!-- EMPIEZA EL SCROLL HORIZONTAL -->
+<a name="seccion2">   
+     <section id="galeria" class="w3-container w3-padding-64">
+    <h2 class="w3-center">Galería de Colecciones</h2>
+    <div class="w3-row w3-center">
+      <!-- Imágenes de la comunidad -->
+      <div class="capa">
+        <div class="item"> <img src="https://pbs.twimg.com/media/FZQiCj0XkAAT45x.jpg" alt=""></div>
+        <div class="item"> <img height="1000" width="1000" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_HHctzwLGYXS6olLx9a_rQOOI8FjfD067Wg&s" alt=""></div>
+        <div class="item"> <img height="1000" width="1000" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgAtmAJHuc8HZ7oODEU9DwkNO-4R0FC9-Pxg&s" alt=""></div>
+        <div class="item"> <img height="1000" width="1000" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnu-9-BpLFM0OfDLBA_7GpaYwN_j0Jsam16KRJCqJuBLPAMnUIlQhaV8m6pexDSqa8r9Q&usqp=CAU" alt=""></div>
+        <div class="item"> <img height="1000" width="1000" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RlRiWqXfikCku_nuK05lEsoa4Be4Fh3YGUiU42u5TI9dWv3a6UdcdbTQ-LPPzfuGPwQ&usqp=CAU" alt=""></div>
+        <div class="item"> <img height="1000" width="1000" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREeDg1rYr4A9MNFH0ijEWlmc9q8TTWIIhVkXStsrRVV_L-9Ju8bA7_8AWGGOXMiiXUGEc&usqp=CAU" alt=""></div>
+    </div>
+  </section></a>
+
+ <!--El javajuasjuas  -->
+      <script>
+        let fontSize = 16;
+        let zoomActive = false;
+        let magnifierActive = false;
+        let daltonicoActive = false;
+    
+        function changeFontSize(change) {
+            fontSize += change;
+            document.body.style.fontSize = `${fontSize}px`;
+        }
+    
+        function toggleZoom() {
+            zoomActive = !zoomActive;
+            const zoomBox = document.getElementById('zoom-box');
+            if (zoomActive) {
+                document.addEventListener('mousemove', handleZoom);
+            } else {
+                document.removeEventListener('mousemove', handleZoom);
+                zoomBox.style.display = 'none';
+            }
+        }
+    
+        function handleZoom(e) {
+            const zoomBox = document.getElementById('zoom-box');
+            zoomBox.style.display = 'block';
+            zoomBox.style.left = `${e.pageX - 75}px`;
+            zoomBox.style.top = `${e.pageY - 75}px`;
+        }
+    
+        function readText() {
+            const text = window.getSelection().toString();
+            if (text) {
+                const synth = window.speechSynthesis;
+                const utter = new SpeechSynthesisUtterance(text);
+                synth.speak(utter);
+            } else {
+                alert('Por favor, selecciona un texto para leer.');
+            }
+        }
+    
+        function toggleMagnifier() {
+            magnifierActive = !magnifierActive;
+            const zoomBox = document.getElementById('zoom-box');
+            if (magnifierActive) {
+                document.body.classList.add('blur');
+                zoomBox.style.display = 'block';
+                document.addEventListener('mousemove', handleMagnifier);
+            } else {
+                document.body.classList.remove('blur');
+                zoomBox.style.display = 'none';
+                document.removeEventListener('mousemove', handleMagnifier);
+            }
+        }
+    
+        function handleMagnifier(e) {
+            const zoomBox = document.getElementById('zoom-box');
+            zoomBox.style.left = `${e.pageX - 75}px`;
+            zoomBox.style.top = `${e.pageY - 75}px`;
+        }
+    
+        function toggleDaltonico() {
+            daltonicoActive = !daltonicoActive;
+            const panel = document.querySelector('.panel');
+            if (daltonicoActive) {
+                document.body.classList.add('daltonico');
+                panel.style.position = 'fixed';
+            } else {
+                document.body.classList.remove('daltonico');
+            }
+        }
+    </script>
+</body>
+</html>
